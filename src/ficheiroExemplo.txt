@@ -1,0 +1,52 @@
+4 -> nr de linhas e colunas
+6 -> nr de pecas
+1:0:0:Chefe -> id(unico, sem poder estar repetido): tipo de peça (irá ser sempre 0): (equipa a que pertence):Alcunha
+                                                                                    //TODO BLACK->0, WHITE->1
+2:0:0:Selvagem
+3:0:0:Grande Artista
+4:0:1:0:Maior
+5:0:1:0:Amigo
+6:0:1:0:Beberolas
+
+Como o mapa é 4x4, a informação das peças terá 4 linhas e 4 colunas
+              c1  c2  c3 c4
+ Linha1       0:  1:  0:  2
+ Linha2       0:  0:  3:  0 --> cada numero diz se esta la uma peça,
+ Linha3       0:  6:  0:  0 --> caso seja !=0, o numero corresponde ao id
+ Linha4       0:  5:  4:  0
+
+ArrayList<Arraylist<String>> linhas= linhas.get(0).get(0)-> 0:1:0:2
+
+
+Formato original:
+4
+6
+1:0:0:Chefe
+2:0:0:Selvagem
+3:0:0:Grande Artista
+4:0:1:0:Maior
+5:0:1:0:Amigo
+6:0:1:0:Beberolas
+0:1:0:2
+0:0:3:0
+0:6:0:0
+0:5:4:0
+
+//TODO BLACK COMECA SEMPRE PRIMEIRO
+ peca 0,1 -> 1,0
+ Mapa.getCoordenadas
+ for()--> ver se e valido inicias
+ for()--> ver se a e valido as finais
+ Mapa.updateCoordenadas
+ peca->coorI
+ peca.movida(
+ int x =0 ->1
+ int y=1 ->0
+ if(valido)
+ valido++; else nao
+ peca.Captura
+ captura++,  caso sim
+
+
+
+  metodos da classe z que chama metodos da classe s
